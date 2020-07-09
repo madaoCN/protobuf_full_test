@@ -13,6 +13,7 @@
 #import <MJExtension/MJExtension.h>
 
 static const int TEST_TIMES = 10000;
+static const int TEST_DATA_SIZE = 10;
 static const int64_t INT_VALUE = 999999;
 static const double DOUBLE_VALUE = 999999.999999;
 static const NSString *STRING_VALUE = @"https://www.jianshu.com/u/00be556128d1";
