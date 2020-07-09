@@ -1,0 +1,6 @@
+framework module Pods_NDProtoTest {
+  umbrella header "Pods-NDProtoTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

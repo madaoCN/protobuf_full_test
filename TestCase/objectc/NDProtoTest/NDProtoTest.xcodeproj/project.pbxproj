@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		517AC29524B7096800A90A29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 517AC29424B7096800A90A29 /* AppDelegate.m */; };
+		517AC29824B7096800A90A29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 517AC29724B7096800A90A29 /* ViewController.m */; };
+		517AC29A24B7096B00A90A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 517AC29924B7096B00A90A29 /* Assets.xcassets */; };
+		517AC29D24B7096B00A90A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 517AC29B24B7096B00A90A29 /* Main.storyboard */; };
+		517AC2A024B7096B00A90A29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 517AC29F24B7096B00A90A29 /* main.m */; };
+		517AC2AB24B7096B00A90A29 /* NDProtoTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 517AC2AA24B7096B00A90A29 /* NDProtoTestTests.m */; };
+		517AC2B924B70BB200A90A29 /* TestModel.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 517AC2B824B70BB200A90A29 /* TestModel.pbobjc.m */; };
+		517AC2BD24B70ED000A90A29 /* NDInt64Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 517AC2BC24B70ED000A90A29 /* NDInt64Model.m */; };
+		517AC2C024B70F1200A90A29 /* NDTenInt64Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 517AC2BF24B70F1200A90A29 /* NDTenInt64Model.m */; };
+		517AC2C424B70F8E00A90A29 /* NDIntegerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 517AC2C324B70F8E00A90A29 /* NDIntegerTests.m */; };
+		517AC2C824B71A4100A90A29 /* NDFloatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 517AC2C724B71A4100A90A29 /* NDFloatTests.m */; };
+		517AC2CB24B71A6A00A90A29 /* NDDoubleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 517AC2CA24B71A6A00A90A29 /* NDDoubleModel.m */; };
+		517AC2CE24B71A7800A90A29 /* NDTenDoubleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 517AC2CD24B71A7800A90A29 /* NDTenDoubleModel.m */; };
+		517AC2D124B71DFA00A90A29 /* NDStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 517AC2D024B71DFA00A90A29 /* NDStringTests.m */; };
+		517AC2D424B7245C00A90A29 /* NDStringModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 517AC2D324B7245C00A90A29 /* NDStringModel.m */; };
+		517AC2D724B7247C00A90A29 /* NDTenStringModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 517AC2D624B7247C00A90A29 /* NDTenStringModel.m */; };
+		A0340802D6E4C54DCA099431 /* Pods_NDProtoTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2878B033848101910B64A5F6 /* Pods_NDProtoTestTests.framework */; };
+		E770791C8DE0F32112BB9995 /* Pods_NDProtoTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A4FEFA3929C111F6961EC8 /* Pods_NDProtoTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		517AC2A724B7096B00A90A29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 517AC28824B7096800A90A29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 517AC28F24B7096800A90A29;
+			remoteInfo = NDProtoTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2878B033848101910B64A5F6 /* Pods_NDProtoTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NDProtoTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		517AC29024B7096800A90A29 /* NDProtoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDProtoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		517AC29324B7096800A90A29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		517AC29424B7096800A90A29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		517AC29624B7096800A90A29 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		517AC29724B7096800A90A29 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		517AC29924B7096B00A90A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		517AC29C24B7096B00A90A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		517AC29E24B7096B00A90A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		517AC29F24B7096B00A90A29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		517AC2A124B7096B00A90A29 /* NDProtoTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NDProtoTest.entitlements; sourceTree = "<group>"; };
+		517AC2A624B7096B00A90A29 /* NDProtoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NDProtoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		517AC2AA24B7096B00A90A29 /* NDProtoTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDProtoTestTests.m; sourceTree = "<group>"; };
+		517AC2AC24B7096B00A90A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		517AC2B724B70BB200A90A29 /* TestModel.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.pbobjc.h; sourceTree = "<group>"; };
+		517AC2B824B70BB200A90A29 /* TestModel.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.pbobjc.m; sourceTree = "<group>"; };
+		517AC2BB24B70ED000A90A29 /* NDInt64Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDInt64Model.h; sourceTree = "<group>"; };
+		517AC2BC24B70ED000A90A29 /* NDInt64Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDInt64Model.m; sourceTree = "<group>"; };
+		517AC2BE24B70F1200A90A29 /* NDTenInt64Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDTenInt64Model.h; sourceTree = "<group>"; };
+		517AC2BF24B70F1200A90A29 /* NDTenInt64Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDTenInt64Model.m; sourceTree = "<group>"; };
+		517AC2C324B70F8E00A90A29 /* NDIntegerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDIntegerTests.m; sourceTree = "<group>"; };
+		517AC2C524B7102E00A90A29 /* NDTestConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDTestConfig.h; sourceTree = "<group>"; };
+		517AC2C724B71A4100A90A29 /* NDFloatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDFloatTests.m; sourceTree = "<group>"; };
+		517AC2C924B71A6A00A90A29 /* NDDoubleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDDoubleModel.h; sourceTree = "<group>"; };
+		517AC2CA24B71A6A00A90A29 /* NDDoubleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDDoubleModel.m; sourceTree = "<group>"; };
+		517AC2CC24B71A7800A90A29 /* NDTenDoubleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDTenDoubleModel.h; sourceTree = "<group>"; };
+		517AC2CD24B71A7800A90A29 /* NDTenDoubleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDTenDoubleModel.m; sourceTree = "<group>"; };
+		517AC2D024B71DFA00A90A29 /* NDStringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDStringTests.m; sourceTree = "<group>"; };
+		517AC2D224B7245C00A90A29 /* NDStringModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDStringModel.h; sourceTree = "<group>"; };
+		517AC2D324B7245C00A90A29 /* NDStringModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDStringModel.m; sourceTree = "<group>"; };
+		517AC2D524B7247C00A90A29 /* NDTenStringModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NDTenStringModel.h; sourceTree = "<group>"; };
+		517AC2D624B7247C00A90A29 /* NDTenStringModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NDTenStringModel.m; sourceTree = "<group>"; };
+		5AB12C53751C27F36E0E23C9 /* Pods-NDProtoTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDProtoTestTests.release.xcconfig"; path = "Target Support Files/Pods-NDProtoTestTests/Pods-NDProtoTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		840167289C96B3E9CF81AF30 /* Pods-NDProtoTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDProtoTest.debug.xcconfig"; path = "Target Support Files/Pods-NDProtoTest/Pods-NDProtoTest.debug.xcconfig"; sourceTree = "<group>"; };
+		8515FE210F96442D532FC44D /* Pods-NDProtoTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDProtoTest.release.xcconfig"; path = "Target Support Files/Pods-NDProtoTest/Pods-NDProtoTest.release.xcconfig"; sourceTree = "<group>"; };
+		92A4FEFA3929C111F6961EC8 /* Pods_NDProtoTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NDProtoTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25397D223595E706993B596 /* Pods-NDProtoTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NDProtoTestTests.debug.xcconfig"; path = "Target Support Files/Pods-NDProtoTestTests/Pods-NDProtoTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		517AC28D24B7096800A90A29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E770791C8DE0F32112BB9995 /* Pods_NDProtoTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517AC2A324B7096B00A90A29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0340802D6E4C54DCA099431 /* Pods_NDProtoTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		517AC28724B7096800A90A29 = {
+			isa = PBXGroup;
+			children = (
+				517AC29224B7096800A90A29 /* NDProtoTest */,
+				517AC2A924B7096B00A90A29 /* NDProtoTestTests */,
+				517AC29124B7096800A90A29 /* Products */,
+				9398929D789454C6BE6CCCFF /* Pods */,
+				90448A6315B81371AE26B21B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		517AC29124B7096800A90A29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				517AC29024B7096800A90A29 /* NDProtoTest.app */,
+				517AC2A624B7096B00A90A29 /* NDProtoTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		517AC29224B7096800A90A29 /* NDProtoTest */ = {
+			isa = PBXGroup;
+			children = (
+				517AC2BA24B70E9800A90A29 /* oc_models */,
+				517AC2B624B70BB200A90A29 /* proto_models */,
+				517AC29324B7096800A90A29 /* AppDelegate.h */,
+				517AC29424B7096800A90A29 /* AppDelegate.m */,
+				517AC29624B7096800A90A29 /* ViewController.h */,
+				517AC29724B7096800A90A29 /* ViewController.m */,
+				517AC29924B7096B00A90A29 /* Assets.xcassets */,
+				517AC29B24B7096B00A90A29 /* Main.storyboard */,
+				517AC29E24B7096B00A90A29 /* Info.plist */,
+				517AC29F24B7096B00A90A29 /* main.m */,
+				517AC2A124B7096B00A90A29 /* NDProtoTest.entitlements */,
+			);
+			path = NDProtoTest;
+			sourceTree = "<group>";
+		};
+		517AC2A924B7096B00A90A29 /* NDProtoTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				517AC2CF24B71DE500A90A29 /* String */,
+				517AC2C624B719D500A90A29 /* Float */,
+				517AC2C124B70F7400A90A29 /* Integer */,
+				517AC2AA24B7096B00A90A29 /* NDProtoTestTests.m */,
+				517AC2AC24B7096B00A90A29 /* Info.plist */,
+				517AC2C524B7102E00A90A29 /* NDTestConfig.h */,
+			);
+			path = NDProtoTestTests;
+			sourceTree = "<group>";
+		};
+		517AC2B624B70BB200A90A29 /* proto_models */ = {
+			isa = PBXGroup;
+			children = (
+				517AC2B724B70BB200A90A29 /* TestModel.pbobjc.h */,
+				517AC2B824B70BB200A90A29 /* TestModel.pbobjc.m */,
+			);
+			path = proto_models;
+			sourceTree = "<group>";
+		};
+		517AC2BA24B70E9800A90A29 /* oc_models */ = {
+			isa = PBXGroup;
+			children = (
+				517AC2BB24B70ED000A90A29 /* NDInt64Model.h */,
+				517AC2BC24B70ED000A90A29 /* NDInt64Model.m */,
+				517AC2BE24B70F1200A90A29 /* NDTenInt64Model.h */,
+				517AC2BF24B70F1200A90A29 /* NDTenInt64Model.m */,
+				517AC2C924B71A6A00A90A29 /* NDDoubleModel.h */,
+				517AC2CA24B71A6A00A90A29 /* NDDoubleModel.m */,
+				517AC2CC24B71A7800A90A29 /* NDTenDoubleModel.h */,
+				517AC2CD24B71A7800A90A29 /* NDTenDoubleModel.m */,
+				517AC2D224B7245C00A90A29 /* NDStringModel.h */,
+				517AC2D324B7245C00A90A29 /* NDStringModel.m */,
+				517AC2D524B7247C00A90A29 /* NDTenStringModel.h */,
+				517AC2D624B7247C00A90A29 /* NDTenStringModel.m */,
+			);
+			path = oc_models;
+			sourceTree = "<group>";
+		};
+		517AC2C124B70F7400A90A29 /* Integer */ = {
+			isa = PBXGroup;
+			children = (
+				517AC2C324B70F8E00A90A29 /* NDIntegerTests.m */,
+			);
+			path = Integer;
+			sourceTree = "<group>";
+		};
+		517AC2C624B719D500A90A29 /* Float */ = {
+			isa = PBXGroup;
+			children = (
+				517AC2C724B71A4100A90A29 /* NDFloatTests.m */,
+			);
+			path = Float;
+			sourceTree = "<group>";
+		};
+		517AC2CF24B71DE500A90A29 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				517AC2D024B71DFA00A90A29 /* NDStringTests.m */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		90448A6315B81371AE26B21B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92A4FEFA3929C111F6961EC8 /* Pods_NDProtoTest.framework */,
+				2878B033848101910B64A5F6 /* Pods_NDProtoTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9398929D789454C6BE6CCCFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				840167289C96B3E9CF81AF30 /* Pods-NDProtoTest.debug.xcconfig */,
+				8515FE210F96442D532FC44D /* Pods-NDProtoTest.release.xcconfig */,
+				B25397D223595E706993B596 /* Pods-NDProtoTestTests.debug.xcconfig */,
+				5AB12C53751C27F36E0E23C9 /* Pods-NDProtoTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		517AC28F24B7096800A90A29 /* NDProtoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 517AC2AF24B7096B00A90A29 /* Build configuration list for PBXNativeTarget "NDProtoTest" */;
+			buildPhases = (
+				D577484DD2DF0ED0D9583933 /* [CP] Check Pods Manifest.lock */,
+				517AC28C24B7096800A90A29 /* Sources */,
+				517AC28D24B7096800A90A29 /* Frameworks */,
+				517AC28E24B7096800A90A29 /* Resources */,
+				CE3F861B5A35C539EFE8C41D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NDProtoTest;
+			productName = NDProtoTest;
+			productReference = 517AC29024B7096800A90A29 /* NDProtoTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		517AC2A524B7096B00A90A29 /* NDProtoTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 517AC2B224B7096B00A90A29 /* Build configuration list for PBXNativeTarget "NDProtoTestTests" */;
+			buildPhases = (
+				DD5E13ACFAA7FDCE5CEF3AE1 /* [CP] Check Pods Manifest.lock */,
+				517AC2A224B7096B00A90A29 /* Sources */,
+				517AC2A324B7096B00A90A29 /* Frameworks */,
+				517AC2A424B7096B00A90A29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				517AC2A824B7096B00A90A29 /* PBXTargetDependency */,
+			);
+			name = NDProtoTestTests;
+			productName = NDProtoTestTests;
+			productReference = 517AC2A624B7096B00A90A29 /* NDProtoTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		517AC28824B7096800A90A29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = madao;
+				TargetAttributes = {
+					517AC28F24B7096800A90A29 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					517AC2A524B7096B00A90A29 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 517AC28F24B7096800A90A29;
+					};
+				};
+			};
+			buildConfigurationList = 517AC28B24B7096800A90A29 /* Build configuration list for PBXProject "NDProtoTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 517AC28724B7096800A90A29;
+			productRefGroup = 517AC29124B7096800A90A29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				517AC28F24B7096800A90A29 /* NDProtoTest */,
+				517AC2A524B7096B00A90A29 /* NDProtoTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		517AC28E24B7096800A90A29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517AC29A24B7096B00A90A29 /* Assets.xcassets in Resources */,
+				517AC29D24B7096B00A90A29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517AC2A424B7096B00A90A29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE3F861B5A35C539EFE8C41D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NDProtoTest/Pods-NDProtoTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NDProtoTest/Pods-NDProtoTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NDProtoTest/Pods-NDProtoTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D577484DD2DF0ED0D9583933 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NDProtoTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD5E13ACFAA7FDCE5CEF3AE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NDProtoTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		517AC28C24B7096800A90A29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517AC2BD24B70ED000A90A29 /* NDInt64Model.m in Sources */,
+				517AC2B924B70BB200A90A29 /* TestModel.pbobjc.m in Sources */,
+				517AC2CE24B71A7800A90A29 /* NDTenDoubleModel.m in Sources */,
+				517AC2CB24B71A6A00A90A29 /* NDDoubleModel.m in Sources */,
+				517AC29824B7096800A90A29 /* ViewController.m in Sources */,
+				517AC2A024B7096B00A90A29 /* main.m in Sources */,
+				517AC29524B7096800A90A29 /* AppDelegate.m in Sources */,
+				517AC2D424B7245C00A90A29 /* NDStringModel.m in Sources */,
+				517AC2D724B7247C00A90A29 /* NDTenStringModel.m in Sources */,
+				517AC2C024B70F1200A90A29 /* NDTenInt64Model.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		517AC2A224B7096B00A90A29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				517AC2C424B70F8E00A90A29 /* NDIntegerTests.m in Sources */,
+				517AC2C824B71A4100A90A29 /* NDFloatTests.m in Sources */,
+				517AC2D124B71DFA00A90A29 /* NDStringTests.m in Sources */,
+				517AC2AB24B7096B00A90A29 /* NDProtoTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		517AC2A824B7096B00A90A29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 517AC28F24B7096800A90A29 /* NDProtoTest */;
+			targetProxy = 517AC2A724B7096B00A90A29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		517AC29B24B7096B00A90A29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				517AC29C24B7096B00A90A29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		517AC2AD24B7096B00A90A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		517AC2AE24B7096B00A90A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		517AC2B024B7096B00A90A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 840167289C96B3E9CF81AF30 /* Pods-NDProtoTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NDProtoTest/NDProtoTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B35J5K5S3C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = NDProtoTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madao.NDProtoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		517AC2B124B7096B00A90A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8515FE210F96442D532FC44D /* Pods-NDProtoTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NDProtoTest/NDProtoTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B35J5K5S3C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = NDProtoTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madao.NDProtoTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		517AC2B324B7096B00A90A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B25397D223595E706993B596 /* Pods-NDProtoTestTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B35J5K5S3C;
+				INFOPLIST_FILE = NDProtoTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.madao.NDProtoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NDProtoTest.app/Contents/MacOS/NDProtoTest";
+			};
+			name = Debug;
+		};
+		517AC2B424B7096B00A90A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AB12C53751C27F36E0E23C9 /* Pods-NDProtoTestTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B35J5K5S3C;
+				INFOPLIST_FILE = NDProtoTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.madao.NDProtoTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NDProtoTest.app/Contents/MacOS/NDProtoTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		517AC28B24B7096800A90A29 /* Build configuration list for PBXProject "NDProtoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				517AC2AD24B7096B00A90A29 /* Debug */,
+				517AC2AE24B7096B00A90A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		517AC2AF24B7096B00A90A29 /* Build configuration list for PBXNativeTarget "NDProtoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				517AC2B024B7096B00A90A29 /* Debug */,
+				517AC2B124B7096B00A90A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		517AC2B224B7096B00A90A29 /* Build configuration list for PBXNativeTarget "NDProtoTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				517AC2B324B7096B00A90A29 /* Debug */,
+				517AC2B424B7096B00A90A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 517AC28824B7096800A90A29 /* Project object */;
+}

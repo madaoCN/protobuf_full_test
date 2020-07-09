@@ -1,0 +1,24 @@
+PODS:
+  - MJExtension (3.2.1)
+  - Protobuf (3.12.0)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - MJExtension
+  - Protobuf
+  - YYModel
+
+SPEC REPOS:
+  trunk:
+    - MJExtension
+    - Protobuf
+    - YYModel
+
+SPEC CHECKSUMS:
+  MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  Protobuf: 2793fcd0622a00b546c60e7cbbcc493e043e9bb9
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 80deb84d2f5c85fd049943d2b3ea53fadd2b68ce
+
+COCOAPODS: 1.8.4
