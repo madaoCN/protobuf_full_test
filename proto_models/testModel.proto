@@ -1,0 +1,97 @@
+syntax = "proto3";
+package testModel;
+option optimize_for = SPEED;
+
+message Int64Model {
+
+  int64 int64Value = 1;
+}
+
+message TenInt64Model {
+
+  int64 int64Value1 = 1;
+  int64 int64Value2 = 2;
+  int64 int64Value3 = 3;
+  int64 int64Value4 = 4;
+  int64 int64Value5 = 5;
+  int64 int64Value6 = 6;
+  int64 int64Value7 = 7;
+  int64 int64Value8 = 8;
+  int64 int64Value9 = 9;
+  int64 int64Value10 = 10;
+}
+
+message DoubleModel {
+
+  double doubleValue = 1;
+}
+
+message TenDoubleModel {
+
+  double doubleValue1 = 1;
+  double doubleValue2 = 2;
+  double doubleValue3 = 3;
+  double doubleValue4 = 4;
+  double doubleValue5 = 5;
+  double doubleValue6 = 6;
+  double doubleValue7 = 7;
+  double doubleValue8 = 8;
+  double doubleValue9 = 9;
+  double doubleValue10 = 10;
+}
+
+// 单个字符串
+message StringModel {
+
+   string stringValue = 1;
+}
+
+// 10个字符串
+message TenStringModel {
+
+  string stringValue1 = 1;
+  string stringValue2 = 2;
+  string stringValue3 = 3;
+  string stringValue4 = 4;
+  string stringValue5 = 5;
+  string stringValue6 = 6;
+  string stringValue7 = 7;
+  string stringValue8 = 8;
+  string stringValue9 = 9;
+  string stringValue10 = 10;
+}
+
+// 列表数据
+message IntListModel {
+
+  repeated int32 intValues = 1 [packed=true];
+}
+
+// 浮点数列表
+message FloatListModel {
+
+  repeated float floatValues = 1 [packed=true];
+}
+
+// 字符串列表
+message StringListModel {
+
+  repeated string stringValues = 1;
+}
+
+// 嵌套
+message Person {
+  string name = 1;
+  float id = 2;
+  string email = 3;
+
+  message PhoneNumber {
+    string number = 1;
+  }
+
+  repeated PhoneNumber phone = 4;
+}
+
+message AddressBook {
+  repeated Person person = 1;
+}
