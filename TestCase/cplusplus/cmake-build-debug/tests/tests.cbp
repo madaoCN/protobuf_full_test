@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tests"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\vcpkg\;CMake Files\vcpkg\scripts\;CMake Files\vcpkg\scripts\buildsystems\;CMake Files\vcpkg\installed\;CMake Files\vcpkg\installed\x64-osx\;CMake Files\vcpkg\installed\x64-osx\share\;CMake Files\vcpkg\installed\x64-osx\share\jsoncpp\;CMake Files\vcpkg\installed\x64-osx\share\rapidjson\;CMake Files\vcpkg\installed\x64-osx\share\gtest\;CMake Files\vcpkg\installed\x64-osx\share\protobuf\;CMake Files\tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tests">
+				<Option output="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests/tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/rapidjson/../../include"/>
+					<Add directory="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/include"/>
+					<Add directory="."/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 tests"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tests/fast">
+				<Option output="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests/tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/rapidjson/../../include"/>
+					<Add directory="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/include"/>
+					<Add directory="."/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 tests/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/main.cpp">
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/scripts/buildsystems/vcpkg.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\scripts\buildsystems\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/jsoncpp/jsoncppConfig-debug.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\jsoncpp\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/jsoncpp/jsoncppConfig-release.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\jsoncpp\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/jsoncpp/jsoncppConfig.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\jsoncpp\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/jsoncpp/jsoncppConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\jsoncpp\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/rapidjson/RapidJSONConfig.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\rapidjson\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/rapidjson/RapidJSONConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\rapidjson\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/gtest/GTestConfig.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\gtest\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/gtest/GTestConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\gtest\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/gtest/GTestTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\gtest\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/gtest/GTestTargets-release.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\gtest\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/gtest/GTestTargets.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\gtest\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-config-version.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-config.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-options.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-targets-release.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-targets.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

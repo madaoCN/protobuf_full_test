@@ -1,0 +1,5 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus
+-- RapidJSON found. Headers: /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/rapidjson/../../include
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug

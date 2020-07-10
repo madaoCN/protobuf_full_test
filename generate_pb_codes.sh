@@ -27,7 +27,7 @@ for file in $PROTO_MODELS_DIR/*; do
     # ./protoc-3/bin/protoc --python_out=${INCLUDE_PATH} $file
     ./protoc-3/bin/protoc --python_out=./TestCase/python $file
     # cpp
-    # ./protoc-3/bin/protoc --cpp_out=${INCLUDE_PATH} $file
+    ./protoc-3/bin/protoc --cpp_out=./TestCase/cplusplus/src $file
     # oc
     ./protoc-3/bin/protoc --objc_out=./TestCase/objectc/NDProtoTest/NDProtoTest $file
     # # java
