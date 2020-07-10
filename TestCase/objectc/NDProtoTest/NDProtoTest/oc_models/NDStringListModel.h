@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NDStringListModel : NSObject
 
-@property (nonatomic, strong) NSMutableArray <NSString *> *stringValues;
+@property (nonatomic, strong) NSArray <NSString *> *stringValues;
 
 @end
 

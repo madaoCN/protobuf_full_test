@@ -149,4 +149,165 @@
     }
     NSLog(@"Int列表 类型MJExtension 解码时间: %f", self.execTime);
 }
+
+- (void)testFloatListModel {
+    
+    // -------------  protobuf -------------
+    [self resetExecTime];
+    NSData *protoData = nil;
+    // 编码
+    for (int i = 0; i < self.testTimes; i++) {
+        CFAbsoluteTime tick = CFAbsoluteTimeGetCurrent();
+        FloatListModel *model = [[FloatListModel alloc] init];
+        
+        for (int i = 0; i < self.dataSize; i++) {
+            [model.floatValuesArray addValue:self.floatValue.floatValue];
+        }
+        protoData = [model data];
+        self.execTime += CFAbsoluteTimeGetCurrent() - tick;
+    }
+    NSLog(@"Float列表 类型protobuf 编码时间: %f", self.execTime);
+    
+    [self resetExecTime];
+    // 解码
+    for (int i = 0; i < self.testTimes; i++) {
+        CFAbsoluteTime tick = CFAbsoluteTimeGetCurrent();
+        
+        FloatListModel *model = [[FloatListModel alloc] initWithData:protoData error:nil];
+        
+        self.execTime += CFAbsoluteTimeGetCurrent() - tick;
+    }
+    NSLog(@"Float列表 类型protobuf 解码时间: %f", self.execTime);
+    
+    // -------------  YYModel -------------
+    [self resetExecTime];
+    NSString *yymodelString = nil;
+    // 编码
+    for (int i = 0; i < self.testTimes; i++) {
+        CFAbsoluteTime tick = CFAbsoluteTimeGetCurrent();
+        NDFloatListModel *model = [[NDFloatListModel alloc] init];
+        model.floatValues = self.floatValues;
+        yymodelString = [model yy_modelToJSONString];
+        self.execTime += CFAbsoluteTimeGetCurrent() - tick;
+    }
+    NSLog(@"Float列表 类型YYModel 编码时间: %f", self.execTime);
+    
+    // 解码
+    [self resetExecTime];
+    for (int i = 0; i < self.testTimes; i++) {
+        CFAbsoluteTime tick = CFAbsoluteTimeGetCurrent();
+        
+        NDFloatListModel *model = [NDFloatListModel yy_modelWithJSON:yymodelString];
+        
+        self.execTime += CFAbsoluteTimeGetCurrent() - tick;
+    }
+    NSLog(@"Float列表 类型YYModel 解码时间: %f", self.execTime);
+    
+    // -------------  MJExtension -------------
+    [self resetExecTime];
+    NSString *mjModelString = nil;
+    // 编码
+    for (int i = 0; i < self.testTimes; i++) {
+        CFAbsoluteTime tick = CFAbsoluteTimeGetCurrent();
+        
+        NDFloatListModel *model = [[NDFloatListModel alloc] init];
+        model.floatValues = self.floatValues;
+        
+        mjModelString = [model mj_JSONString];
+        self.execTime += CFAbsoluteTimeGetCurrent() - tick;
+    }
+    NSLog(@"Float列表 类型MJExtension 编码时间: %f", self.execTime);
+    
+    // 解码
+    [self resetExecTime];
+    for (int i = 0; i < self.testTimes; i++) {
+        CFAbsoluteTime tick = CFAbsoluteTimeGetCurrent();
+        
+        NDFloatListModel *model = [NDFloatListModel mj_objectWithKeyValues:mjModelString];
+        
+        self.execTime += CFAbsoluteTimeGetCurrent() - tick;
+    }
+    NSLog(@"Float列表 类型MJExtension 解码时间: %f", self.execTime);
+}
+
+
+- (void)testStringListModel {
+    
+    // -------------  protobuf -------------
+    [self resetExecTime];
+    NSData *protoData = nil;
+    // 编码
+    for (int i = 0; i < self.testTimes; i++) {
+        CFAbsoluteTime tick = CFAbsoluteTimeGetCurrent();
+        StringListModel *model = [[StringListModel alloc] init];
+        
+        for (int i = 0; i < self.dataSize; i++) {
+            [model.stringValuesArray addObject:self.stringValue];
+        }
+        protoData = [model data];
+        self.execTime += CFAbsoluteTimeGetCurrent() - tick;
+    }
+    NSLog(@"String列表 类型protobuf 编码时间: %f", self.execTime);
+    
+    [self resetExecTime];
+    // 解码
+    for (int i = 0; i < self.testTimes; i++) {
+        CFAbsoluteTime tick = CFAbsoluteTimeGetCurrent();
+        
+        StringListModel *model = [[StringListModel alloc] initWithData:protoData error:nil];
+        
+        self.execTime += CFAbsoluteTimeGetCurrent() - tick;
+    }
+    NSLog(@"String列表 类型protobuf 解码时间: %f", self.execTime);
+    
+    // -------------  YYModel -------------
+    [self resetExecTime];
+    NSString *yymodelString = nil;
+    // 编码
+    for (int i = 0; i < self.testTimes; i++) {
+        CFAbsoluteTime tick = CFAbsoluteTimeGetCurrent();
+        NDStringListModel *model = [[NDStringListModel alloc] init];
+        model.stringValues = self.stringValues;
+        yymodelString = [model yy_modelToJSONString];
+        self.execTime += CFAbsoluteTimeGetCurrent() - tick;
+    }
+    NSLog(@"String列表 类型YYModel 编码时间: %f", self.execTime);
+    
+    // 解码
+    [self resetExecTime];
+    for (int i = 0; i < self.testTimes; i++) {
+        CFAbsoluteTime tick = CFAbsoluteTimeGetCurrent();
+        
+        NDStringListModel *model = [NDStringListModel yy_modelWithJSON:yymodelString];
+        
+        self.execTime += CFAbsoluteTimeGetCurrent() - tick;
+    }
+    NSLog(@"String列表 类型YYModel 解码时间: %f", self.execTime);
+    
+    // -------------  MJExtension -------------
+    [self resetExecTime];
+    NSString *mjModelString = nil;
+    // 编码
+    for (int i = 0; i < self.testTimes; i++) {
+        CFAbsoluteTime tick = CFAbsoluteTimeGetCurrent();
+        
+        NDStringListModel *model = [[NDStringListModel alloc] init];
+        model.stringValues = self.stringValues;
+        
+        mjModelString = [model mj_JSONString];
+        self.execTime += CFAbsoluteTimeGetCurrent() - tick;
+    }
+    NSLog(@"String列表 类型MJExtension 编码时间: %f", self.execTime);
+    
+    // 解码
+    [self resetExecTime];
+    for (int i = 0; i < self.testTimes; i++) {
+        CFAbsoluteTime tick = CFAbsoluteTimeGetCurrent();
+        
+        NDStringListModel *model = [NDFloatListModel mj_objectWithKeyValues:mjModelString];
+        
+        self.execTime += CFAbsoluteTimeGetCurrent() - tick;
+    }
+    NSLog(@"String列表 类型MJExtension 解码时间: %f", self.execTime);
+}
 @end

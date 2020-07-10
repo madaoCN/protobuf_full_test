@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NDIntListModel : NSObject
 
-@property (nonatomic, strong) NSMutableArray <NSNumber *> *intValues;
+@property (nonatomic, strong) NSArray <NSNumber *> *intValues;
 
 @end
 

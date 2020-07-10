@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NDFloatListModel : NSObject
 
-@property (nonatomic, strong) NSMutableArray <NSNumber *> *intValues;
+@property (nonatomic, strong) NSArray <NSNumber *> *floatValues;
 
 @end
 
