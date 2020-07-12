@@ -100,10 +100,12 @@ tests/CMakeFiles/tests.dir/main.cpp.o: ../vcpkg/installed/x64-osx/share/rapidjso
 tests/CMakeFiles/tests.dir/main.cpp.o: ../src/cpp_models/Int64_model.h
 tests/CMakeFiles/tests.dir/main.cpp.o: ../src/cpp_models/base_model.h
 tests/CMakeFiles/tests.dir/main.cpp.o: ../src/cpp_models/float_model.h
+tests/CMakeFiles/tests.dir/main.cpp.o: ../src/cpp_models/string_model.h
 tests/CMakeFiles/tests.dir/main.cpp.o: ../src/proto_models/testModel.pb.cc
 tests/CMakeFiles/tests.dir/main.cpp.o: ../src/proto_models/testModel.pb.h
-tests/CMakeFiles/tests.dir/main.cpp.o: ../tests/float_tests.cpp
-tests/CMakeFiles/tests.dir/main.cpp.o: ../tests/integer_tests.cpp
+tests/CMakeFiles/tests.dir/main.cpp.o: ../tests/float_tests.hpp
+tests/CMakeFiles/tests.dir/main.cpp.o: ../tests/integer_tests.hpp
 tests/CMakeFiles/tests.dir/main.cpp.o: ../tests/main.cpp
+tests/CMakeFiles/tests.dir/main.cpp.o: ../tests/string_tests.hpp
 tests/CMakeFiles/tests.dir/main.cpp.o: ../tests/test_config.h
 

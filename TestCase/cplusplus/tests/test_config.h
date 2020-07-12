@@ -5,11 +5,6 @@
 #ifndef CPLUSPLUS_TEST_CONFIG_H
 #define CPLUSPLUS_TEST_CONFIG_H
 
-#include <rapidjson/rapidjson.h>
-#include <json/json.h>
-#include "../src/proto_models/testModel.pb.h"
-#include "../src/proto_models/testModel.pb.cc"
-
 using namespace std;
 
 static const int TEST_TIMES = 1000;

@@ -1429,16 +1429,24 @@ string
 /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/cpp_models/base_model.h
 json/json.h
 -
-rapidjson/rapidjson.h
--
 rapidjson/document.h
 -
 rapidjson/writer.h
 -
 rapidjson/stringbuffer.h
 -
+../proto_models/testModel.pb.h
+/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/proto_models/testModel.pb.h
+../proto_models/testModel.pb.cc
+/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/proto_models/testModel.pb.cc
 
 /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/cpp_models/float_model.h
+base_model.h
+/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/cpp_models/base_model.h
+string
+-
+
+/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/cpp_models/string_model.h
 base_model.h
 /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/cpp_models/base_model.h
 string
@@ -1506,7 +1514,7 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/float_tests.cpp
+/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/float_tests.hpp
 gtest/gtest.h
 -
 stdio.h
@@ -1518,7 +1526,7 @@ test_config.h
 ../src/cpp_models/float_model.h
 /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/cpp_models/float_model.h
 
-/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/integer_tests.cpp
+/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/integer_tests.hpp
 gtest/gtest.h
 -
 stdio.h
@@ -1529,24 +1537,32 @@ test_config.h
 /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/test_config.h
 ../src/cpp_models/Int64_model.h
 /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/cpp_models/Int64_model.h
+../src/cpp_models/Int64_model.h
+/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/cpp_models/Int64_model.h
 
 /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/main.cpp
 iostream
 -
 gtest/gtest.h
 -
-integer_tests.cpp
-/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/integer_tests.cpp
-float_tests.cpp
-/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/float_tests.cpp
+integer_tests.hpp
+/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/integer_tests.hpp
+float_tests.hpp
+/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/float_tests.hpp
+string_tests.hpp
+/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/string_tests.hpp
+
+/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/string_tests.hpp
+gtest/gtest.h
+-
+stdio.h
+-
+ctime
+-
+test_config.h
+/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/test_config.h
+../src/cpp_models/string_model.h
+/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/cpp_models/string_model.h
 
 /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/test_config.h
-rapidjson/rapidjson.h
--
-json/json.h
--
-../src/proto_models/testModel.pb.h
-/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/proto_models/testModel.pb.h
-../src/proto_models/testModel.pb.cc
-/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/proto_models/testModel.pb.cc
 

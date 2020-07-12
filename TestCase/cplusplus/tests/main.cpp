@@ -4,8 +4,9 @@
 
 #include <iostream>
 #include <gtest/gtest.h>
-#include "integer_tests.cpp"
-#include "float_tests.cpp"
+#include "integer_tests.hpp"
+#include "float_tests.hpp"
+#include "string_tests.hpp"
 
 int main(int argc, char ** argv) {
 
