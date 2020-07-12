@@ -7,5 +7,9 @@ project(cplusplus)
 
 set(CMAKE_CXX_STANDARD 14)
 
+find_package(protobuf CONFIG REQUIRED)
+
 add_executable(main main.cpp)
 add_subdirectory(tests)
+
+target_link_libraries(main PRIVATE protobuf::libprotoc protobuf::libprotobuf protobuf::libprotobuf-lite)

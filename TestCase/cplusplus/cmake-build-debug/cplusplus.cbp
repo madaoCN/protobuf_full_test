@@ -5,7 +5,7 @@
 		<Option title="cplusplus"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\vcpkg\;CMake Files\vcpkg\scripts\;CMake Files\vcpkg\scripts\buildsystems\;CMake Files\vcpkg\installed\;CMake Files\vcpkg\installed\x64-osx\;CMake Files\vcpkg\installed\x64-osx\share\;CMake Files\vcpkg\installed\x64-osx\share\jsoncpp\;CMake Files\vcpkg\installed\x64-osx\share\rapidjson\;CMake Files\vcpkg\installed\x64-osx\share\gtest\;CMake Files\vcpkg\installed\x64-osx\share\protobuf\;CMake Files\tests\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\vcpkg\;CMake Files\vcpkg\scripts\;CMake Files\vcpkg\scripts\buildsystems\;CMake Files\vcpkg\installed\;CMake Files\vcpkg\installed\x64-osx\;CMake Files\vcpkg\installed\x64-osx\share\;CMake Files\vcpkg\installed\x64-osx\share\protobuf\;CMake Files\vcpkg\installed\x64-osx\share\jsoncpp\;CMake Files\vcpkg\installed\x64-osx\share\rapidjson\;CMake Files\vcpkg\installed\x64-osx\share\gtest\;CMake Files\tests\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/cmake-build-debug"/>
@@ -44,6 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/include"/>
 					<Add directory="."/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
@@ -66,6 +67,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/include"/>
 					<Add directory="."/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
@@ -142,6 +144,24 @@
 		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/scripts/buildsystems/vcpkg.cmake">
 			<Option virtualFolder="CMake Files\vcpkg\scripts\buildsystems\"/>
 		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-config-version.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-config.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-options.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-targets-release.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
+		</Unit>
+		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-targets.cmake">
+			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
+		</Unit>
 		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/jsoncpp/jsoncppConfig-debug.cmake">
 			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\jsoncpp\"/>
 		</Unit>
@@ -174,24 +194,6 @@
 		</Unit>
 		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/gtest/GTestTargets.cmake">
 			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\gtest\"/>
-		</Unit>
-		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-config-version.cmake">
-			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
-		</Unit>
-		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-config.cmake">
-			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
-		</Unit>
-		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-options.cmake">
-			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
-		</Unit>
-		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-targets-debug.cmake">
-			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
-		</Unit>
-		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-targets-release.cmake">
-			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
-		</Unit>
-		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/vcpkg/installed/x64-osx/share/protobuf/protobuf-targets.cmake">
-			<Option virtualFolder="CMake Files\vcpkg\installed\x64-osx\share\protobuf\"/>
 		</Unit>
 		<Unit filename="/Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\tests\"/>

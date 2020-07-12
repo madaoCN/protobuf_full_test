@@ -45,7 +45,7 @@ PROTOBUF_NAMESPACE_CLOSE
 struct TableStruct_proto_5fmodels_2ftestModel_2eproto {
   static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTableField entries[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
-  static const ::PROTOBUF_NAMESPACE_ID::internal::AuxillaryParseTableField aux[]
+  static const ::PROTOBUF_NAMESPACE_ID::internal::AuxiliaryParseTableField aux[]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
   static const ::PROTOBUF_NAMESPACE_ID::internal::ParseTable schema[12]
     PROTOBUF_SECTION_VARIABLE(protodesc_cold);
@@ -111,7 +111,7 @@ namespace testModel {
 // ===================================================================
 
 class Int64Model PROTOBUF_FINAL :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:testModel.Int64Model) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:testModel.Int64_model) */ {
  public:
   inline Int64Model() : Int64Model(nullptr) {};
   virtual ~Int64Model();
@@ -200,7 +200,7 @@ class Int64Model PROTOBUF_FINAL :
   void InternalSwap(Int64Model* other);
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "testModel.Int64Model";
+    return "testModel.Int64_model";
   }
   protected:
   explicit Int64Model(::PROTOBUF_NAMESPACE_ID::Arena* arena);
@@ -234,7 +234,7 @@ class Int64Model PROTOBUF_FINAL :
   void _internal_set_int64value(::PROTOBUF_NAMESPACE_ID::int64 value);
   public:
 
-  // @@protoc_insertion_point(class_scope:testModel.Int64Model)
+  // @@protoc_insertion_point(class_scope:testModel.Int64_model)
  private:
   class _Internal;
 
@@ -2378,7 +2378,7 @@ class AddressBook PROTOBUF_FINAL :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
-// Int64Model
+// Int64_model
 
 // int64 int64Value = 1;
 inline void Int64Model::clear_int64value() {
@@ -2388,7 +2388,7 @@ inline ::PROTOBUF_NAMESPACE_ID::int64 Int64Model::_internal_int64value() const {
   return int64value_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::int64 Int64Model::int64value() const {
-  // @@protoc_insertion_point(field_get:testModel.Int64Model.int64Value)
+  // @@protoc_insertion_point(field_get:testModel.Int64_model.int64Value)
   return _internal_int64value();
 }
 inline void Int64Model::_internal_set_int64value(::PROTOBUF_NAMESPACE_ID::int64 value) {
@@ -2397,7 +2397,7 @@ inline void Int64Model::_internal_set_int64value(::PROTOBUF_NAMESPACE_ID::int64 
 }
 inline void Int64Model::set_int64value(::PROTOBUF_NAMESPACE_ID::int64 value) {
   _internal_set_int64value(value);
-  // @@protoc_insertion_point(field_set:testModel.Int64Model.int64Value)
+  // @@protoc_insertion_point(field_set:testModel.Int64_model.int64Value)
 }
 
 // -------------------------------------------------------------------
