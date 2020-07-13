@@ -24,17 +24,17 @@ class Person: virtual public BaseModel {
 
 public:
     string name;
-    float id_;
+    double id_ = 9999.9999;
     string email;
     vector<PhoneNumber> phoneArr;
 
     Person() {
-        name = "梁meme";
-        id_ = 999999.999999;
-        email = "591710551@qq.com";
+        this->name = "梁meme";
+        this->id_ = 9999.9999;
+        this->email = "591710551@qq.com";
 
         for (int i = 0; i < 10; ++i) {
-            phoneArr.push_back(PhoneNumber());
+            this->phoneArr.push_back(PhoneNumber());
         }
     }
 
@@ -60,7 +60,7 @@ public:
 
         // 解析
         this->name = value["name"].asString();
-        this->id_ = value["id"].asFloat();
+        this->id_ = value["id"].asDouble();
         this->email = value["email"].asString();
 
         this->phoneArr.clear();
@@ -102,7 +102,7 @@ public:
 
         // 解析
         this->name = document["name"].GetString();
-        this->id_ = document["id"].GetFloat();
+        this->id_ = document["id"].GetDouble();
         this->email = document["email"].GetString();
 
         this->phoneArr.clear();
@@ -124,6 +124,120 @@ public:
 
         for (int i = 0; i < 10; ++i) {
             personArr.push_back(Person());
+        }
+    }
+
+
+    std::string toJsonWithJsonCpp() {
+
+        Json::Value root;
+
+        for (int j = 0; j < this->personArr.size(); ++j) {
+
+            Person person = this->personArr[j];
+            Json::Value model;
+            model["name"] = person.name;
+            model["id"] = person.id_;
+            model["email"] = person.email;
+
+            for (int i = 0; i < person.phoneArr.size(); ++i) {
+                model["phoneArr"][i] = person.phoneArr[i].number;
+            }
+
+            root["personArr"][j] = model;
+        }
+
+        return root.toStyledString();
+    }
+
+    void parseFromJsonValueWithJsonCpp(std::string jsonString) {
+
+        Json::CharReaderBuilder readerBuilder;
+        Json::Value value;
+        std::unique_ptr<Json::CharReader> const jsonReader(readerBuilder.newCharReader());
+        bool res = jsonReader->parse(jsonString.c_str(), jsonString.c_str() + jsonString.length(), &value, NULL);
+
+        // 解析
+        for (int i = 0; i < value["personArr"].size(); ++i) {
+            Json::Value personValue = value["personArr"][i];
+
+            Person person;
+
+            person.name = personValue["name"].asString();
+            person.id_ = personValue["id"].asDouble();
+            person.email = personValue["email"].asString();
+
+            person.phoneArr.clear();
+            for (int i = 0; i < personValue["phoneArr"].size(); ++i) {
+                PhoneNumber phoneNumber;
+                phoneNumber.number = personValue["phoneArr"][i].asString();
+                person.phoneArr.push_back(phoneNumber);
+            }
+        }
+    }
+
+    std::string toJsonWithRapidJson() {
+
+        rapidjson::StringBuffer stringBuffer;
+        rapidjson::Document document;
+        rapidjson::Document::AllocatorType &allocator = document.GetAllocator();
+
+        document.SetObject();
+
+        rapidjson::Value personArr(rapidjson::Type::kArrayType);
+        // 添加数据
+        for (int j = 0; j < this->personArr.size(); ++j) {
+
+            Person person = this->personArr[j];
+            rapidjson::Value personValue(rapidjson::Type::kObjectType);
+
+            personValue.AddMember("name", rapidjson::StringRef(person.name.c_str()), allocator);
+            personValue.AddMember("id", person.id_, allocator);
+            personValue.AddMember("email", rapidjson::StringRef(person.email.c_str()), allocator);
+            rapidjson::Value arr(rapidjson::Type::kArrayType);
+            for (int i = 0; i < person.phoneArr.size(); ++i) {
+                arr.PushBack(rapidjson::StringRef(person.phoneArr[i].number.c_str()), allocator);
+            }
+            personValue.AddMember("phoneArr", arr, allocator);
+
+            // 添加至 personArr
+            personArr.PushBack(personValue, allocator);
+        }
+
+        // 添加 personArr
+        document.AddMember("personArr", personArr, allocator);
+
+        rapidjson::Writer<rapidjson::StringBuffer> writer(stringBuffer);
+        document.Accept(writer);
+
+        return stringBuffer.GetString();
+    }
+
+    void parseFromJsonValueWithRapidJson(std::string jsonString) {
+
+        rapidjson::Document document;
+        document.Parse(jsonString.c_str());
+
+        const rapidjson::Value& arr = document["personArr"];
+        this->personArr.clear();
+
+        for (int i = 0; i < arr.Size(); ++i) {
+            Person person;
+            const rapidjson::Value& personValue = arr[i];
+            // 解析
+            person.name = personValue["name"].GetString();
+            person.id_ = personValue["id"].GetDouble();
+            person.email = personValue["email"].GetString();
+
+            person.phoneArr.clear();
+            const rapidjson::Value& phoneArr = personValue["phoneArr"];
+            for (int i = 0; i < phoneArr.Size(); ++i) {
+                PhoneNumber number;
+                number.number = phoneArr[i].GetString();
+                person.phoneArr.push_back(number);
+            }
+
+            this->personArr.push_back(person);
         }
     }
 };

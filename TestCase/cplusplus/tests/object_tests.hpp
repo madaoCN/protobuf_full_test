@@ -46,6 +46,28 @@ public:
         return model;
     }
 
+    // 初始化pb person
+    testModel::AddressBook generateProtoAddressbook() {
+
+        testModel::AddressBook addressBook1;
+
+        for (int i = 0; i < this->addressBook.personArr.size(); ++i) {
+
+            Person personModel = this->addressBook.personArr[i];
+            testModel::Person *model = addressBook1.add_person();
+
+            model->set_name(personModel.name);
+            model->set_email(personModel.email);
+            model->set_id(personModel.id_);
+
+            for (int i = 0; i < person.phoneArr.size(); ++i) {
+                testModel::Person_PhoneNumber phoneNumber;
+                model->add_phone()->set_number(person.phoneArr[i].number);
+            }
+        }
+
+        return addressBook1;
+    }
 protected:
 
     virtual void SetUp() {
@@ -145,4 +167,92 @@ TEST_F(ObjectTests, testSingleObject) {
     printf("object 类型 jsoncpp 解码时间：%f\n", this->execTime / CLOCKS_PER_SEC);
 }
 
+
+TEST_F(ObjectTests, testObjectArr) {
+
+    // ------------  protobuf
+    this->resetTime();
+    // 编码
+    string serializeString;
+    for (int i = 0; i < this->testTimes; ++i) {
+
+        clock_t tick = clock();
+
+        testModel::AddressBook model = this->generateProtoAddressbook();
+        model.SerializeToString(&serializeString);
+
+        this->execTime += clock() - tick;
+    }
+    printf("\nobject列表 类型 protobuf 编码时间：%f\n", this->execTime / CLOCKS_PER_SEC);
+
+    //解码
+    this->resetTime();
+    for (int i = 0; i < this->testTimes; ++i) {
+
+        clock_t tick = clock();
+
+        // 编码
+        testModel::AddressBook model;
+        model.ParseFromString(serializeString);
+
+        this->execTime += clock() - tick;
+    }
+    printf("object列表 类型 protobuf 解码时间：%f\n", this->execTime / CLOCKS_PER_SEC);
+
+    // ------------ rapidJson
+    // 编码
+    this->resetTime();
+    string rapidJsonString;
+    for (int i = 0; i < this->testTimes; ++i) {
+
+        clock_t tick = clock();
+
+        AddressBook model;
+        rapidJsonString = model.toJsonWithRapidJson();
+
+        this->execTime += clock() - tick;
+    }
+    printf("object列表 类型 rapidJson 编码时间：%f\n", this->execTime / CLOCKS_PER_SEC);
+
+    // 解码
+    this->resetTime();
+    for (int i = 0; i < this->testTimes; ++i) {
+
+        clock_t tick = clock();
+
+        AddressBook model;
+        model.parseFromJsonValueWithRapidJson(rapidJsonString);
+
+        this->execTime += clock() - tick;
+    }
+    printf("object列表 类型 rapidJson 解码时间：%f\n", this->execTime / CLOCKS_PER_SEC);
+
+    // ------------ jsoncpp
+    // 编码
+    this->resetTime();
+    string jsonCppString;
+    for (int i = 0; i < this->testTimes; ++i) {
+
+        clock_t tick = clock();
+
+        AddressBook model;
+        jsonCppString = model.toJsonWithJsonCpp();
+
+        this->execTime += clock() - tick;
+    }
+    printf("object列表 类型 jsoncpp 编码时间：%f\n", this->execTime / CLOCKS_PER_SEC);
+
+    // 解码
+    this->resetTime();
+    for (int i = 0; i < this->testTimes; ++i) {
+
+        clock_t tick = clock();
+
+        AddressBook model;
+        model.parseFromJsonValueWithJsonCpp(jsonCppString);
+
+        this->execTime += clock() - tick;
+    }
+    printf("object列表 类型 jsoncpp 解码时间：%f\n", this->execTime / CLOCKS_PER_SEC);
+}
 #endif //CPLUSPLUS_OBJECT_TESTS_H
