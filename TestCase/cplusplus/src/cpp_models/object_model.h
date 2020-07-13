@@ -46,7 +46,7 @@ public:
         model["email"] = this->email;
 
         for (int i = 0; i < this->phoneArr.size(); ++i) {
-            model["phoneArr"][i] = this->phoneArr[i].number;
+            model["phoneArr"][i]["number"] = this->phoneArr[i].number;
         }
         return model.toStyledString();
     }
@@ -66,7 +66,7 @@ public:
         this->phoneArr.clear();
         for (int i = 0; i < value["phoneArr"].size(); ++i) {
             PhoneNumber phoneNumber;
-            phoneNumber.number = value["phoneArr"][i].asString();
+            phoneNumber.number = value["phoneArr"][i]["number"].asString();
             this->phoneArr.push_back(phoneNumber);
         }
     }
@@ -85,7 +85,11 @@ public:
         document.AddMember("email", rapidjson::StringRef(this->email.c_str()), allocator);
         rapidjson::Value arr(rapidjson::Type::kArrayType);
         for (int i = 0; i < this->phoneArr.size(); ++i) {
-            arr.PushBack(rapidjson::StringRef(this->phoneArr[i].number.c_str()), allocator);
+
+            rapidjson::Value phone(rapidjson::Type::kObjectType);
+            phone.SetObject();
+            phone.AddMember("number", rapidjson::StringRef(this->phoneArr[i].number.c_str()), allocator);
+            arr.PushBack(phone, allocator);
         }
         document.AddMember("phoneArr", arr, allocator);
 
@@ -109,7 +113,7 @@ public:
         const rapidjson::Value& arr = document["phoneArr"];
         for (int i = 0; i < arr.Size(); ++i) {
             PhoneNumber number;
-            number.number = arr[i].GetString();
+            number.number = arr[i]["number"].GetString();
             this->phoneArr.push_back(number);
         }
     }
@@ -141,7 +145,7 @@ public:
             model["email"] = person.email;
 
             for (int i = 0; i < person.phoneArr.size(); ++i) {
-                model["phoneArr"][i] = person.phoneArr[i].number;
+                model["phoneArr"][i]["number"] = person.phoneArr[i].number;
             }
 
             root["personArr"][j] = model;
@@ -170,7 +174,7 @@ public:
             person.phoneArr.clear();
             for (int i = 0; i < personValue["phoneArr"].size(); ++i) {
                 PhoneNumber phoneNumber;
-                phoneNumber.number = personValue["phoneArr"][i].asString();
+                phoneNumber.number = personValue["phoneArr"][i]["number"].asString();
                 person.phoneArr.push_back(phoneNumber);
             }
         }
@@ -196,7 +200,11 @@ public:
             personValue.AddMember("email", rapidjson::StringRef(person.email.c_str()), allocator);
             rapidjson::Value arr(rapidjson::Type::kArrayType);
             for (int i = 0; i < person.phoneArr.size(); ++i) {
-                arr.PushBack(rapidjson::StringRef(person.phoneArr[i].number.c_str()), allocator);
+
+                rapidjson::Value phone(rapidjson::Type::kObjectType);
+                phone.SetObject();
+                phone.AddMember("number", rapidjson::StringRef(person.phoneArr[i].number.c_str()), allocator);
+                arr.PushBack(phone, allocator);
             }
             personValue.AddMember("phoneArr", arr, allocator);
 
@@ -233,7 +241,7 @@ public:
             const rapidjson::Value& phoneArr = personValue["phoneArr"];
             for (int i = 0; i < phoneArr.Size(); ++i) {
                 PhoneNumber number;
-                number.number = phoneArr[i].GetString();
+                number.number = phoneArr[i]["number"].GetString();
                 person.phoneArr.push_back(number);
             }
 
