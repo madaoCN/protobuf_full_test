@@ -13,9 +13,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f07c2f66-fbbe-4656-b122-7fd6e1756a4a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tests/CMakeFiles/tests.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpp_models/list_model.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpp_models/list_model.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/list_tests.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/list_tests.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cpp_models/object_model.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/object_tests.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vcpkg/ports/aixlog/portfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/vcpkg/ports/aixlog/portfile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vcpkg/ports/argh/portfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/vcpkg/ports/argh/portfile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vcpkg/ports/argparse/portfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/vcpkg/ports/argparse/portfile.cmake" afterDir="false" />
@@ -84,6 +85,7 @@
       <change beforePath="$PROJECT_DIR$/vcpkg/toolsrc/src/vcpkg-test/util.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vcpkg/toolsrc/src/vcpkg-test/util.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vcpkg/toolsrc/src/vcpkg/commands.ci.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vcpkg/toolsrc/src/vcpkg/commands.ci.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vcpkg/toolsrc/src/vcpkg/install.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vcpkg/toolsrc/src/vcpkg/install.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../objectc/NDProtoTest/NDProtoTest.xcworkspace/xcuserdata/liangxiansong.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../objectc/NDProtoTest/NDProtoTest.xcworkspace/xcuserdata/liangxiansong.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -113,40 +115,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/object_tests.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1847">
+              <caret line="139" column="14" selection-start-line="139" selection-start-column="14" selection-end-line="139" selection-end-column="14" />
+              <folding>
+                <element signature="e#107#131#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cpp_models/object_model.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="111" column="47" selection-start-line="111" selection-start-column="47" selection-end-line="111" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cpp_models/list_model.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="171" column="54" selection-start-line="171" selection-start-column="54" selection-end-line="171" selection-end-column="54" />
+            <state relative-caret-position="264">
+              <caret line="127" column="28" lean-forward="true" selection-start-line="127" selection-end-line="128" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vcpkg/installed/x64-osx/include/rapidjson/rapidjson.h">
+        <entry file="file://$PROJECT_DIR$/src/cpp_models/string_model.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="620" column="4" selection-start-line="620" selection-start-column="4" selection-end-line="620" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vcpkg/installed/x64-osx/include/rapidjson/document.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="1677" selection-start-line="1677" selection-end-line="1677" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/list_tests.hpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="212" column="32" selection-start-line="212" selection-start-column="32" selection-end-line="212" selection-end-column="32" />
+            <state relative-caret-position="257">
+              <caret line="57" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
               <folding>
-                <element signature="e#40#64#0" expanded="true" />
+                <element signature="e#107#130#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/proto_models/testModel.pb.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="4206" column="54" selection-start-line="4206" selection-start-column="54" selection-end-line="4206" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -231,9 +245,11 @@
         <option value="$PROJECT_DIR$/tests/integer_tests.hpp" />
         <option value="$PROJECT_DIR$/src/cpp_models/string_model.h" />
         <option value="$PROJECT_DIR$/tests/string_tests.hpp" />
-        <option value="$PROJECT_DIR$/tests/main.cpp" />
-        <option value="$PROJECT_DIR$/tests/list_tests.hpp" />
         <option value="$PROJECT_DIR$/src/cpp_models/list_model.h" />
+        <option value="$PROJECT_DIR$/tests/list_tests.hpp" />
+        <option value="$PROJECT_DIR$/tests/main.cpp" />
+        <option value="$PROJECT_DIR$/src/cpp_models/object_model.h" />
+        <option value="$PROJECT_DIR$/tests/object_tests.hpp" />
       </list>
     </option>
   </component>
@@ -245,7 +261,7 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="108" />
+    <option name="x" value="106" />
     <option name="y" value="23" />
     <option name="width" value="1334" />
     <option name="height" value="844" />
@@ -327,7 +343,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Google Test.ListTests.testStringList">
+  <component name="RunManager" selected="Google Test.ObjectTests.testSingleObject">
     <configuration name="ListTests.testFloatList" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cplusplus" TARGET_NAME="tests" RUN_TARGET_PROJECT_NAME="cplusplus" RUN_TARGET_NAME="tests" TEST_CLASS="ListTests" TEST_METHOD="testFloatList" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -346,7 +362,7 @@
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringTests.testString" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cplusplus" TARGET_NAME="tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cplusplus" RUN_TARGET_NAME="tests" TEST_CLASS="StringTests" TEST_METHOD="testString" TEST_MODE="SUITE_TEST">
+    <configuration name="ObjectTests.testSingleObject" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cplusplus" TARGET_NAME="tests" RUN_TARGET_PROJECT_NAME="cplusplus" RUN_TARGET_NAME="tests" TEST_CLASS="ObjectTests" TEST_METHOD="testSingleObject" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -371,19 +387,19 @@
     <list>
       <item itemvalue="Application.main" />
       <item itemvalue="Application.tests" />
-      <item itemvalue="Google Test.StringTests.testString" />
       <item itemvalue="Google Test.StringTests.testTenString" />
       <item itemvalue="Google Test.ListTests.testIntList" />
       <item itemvalue="Google Test.ListTests.testFloatList" />
       <item itemvalue="Google Test.ListTests.testStringList" />
+      <item itemvalue="Google Test.ObjectTests.testSingleObject" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Google Test.ObjectTests.testSingleObject" />
         <item itemvalue="Google Test.ListTests.testStringList" />
         <item itemvalue="Google Test.ListTests.testFloatList" />
         <item itemvalue="Google Test.ListTests.testIntList" />
         <item itemvalue="Google Test.StringTests.testTenString" />
-        <item itemvalue="Google Test.StringTests.testString" />
       </list>
     </recent_temporary>
   </component>
@@ -411,26 +427,11 @@
       <workItem from="1594552557460" duration="9077000" />
       <workItem from="1594561887492" duration="40000" />
       <workItem from="1594561941249" duration="291000" />
-      <workItem from="1594562235741" duration="5712000" />
+      <workItem from="1594562235741" duration="8433000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ListTests_testIntList - 2020.07.12 at 23h 01m 06s.xml">
-      <configuration name="ListTests.testIntList" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ListTests_testIntList - 2020.07.12 at 23h 05m 20s.xml">
-      <configuration name="ListTests.testIntList" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ListTests_testIntList - 2020.07.12 at 23h 07m 38s.xml">
-      <configuration name="ListTests.testIntList" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ListTests_testIntList - 2020.07.12 at 23h 09m 12s.xml">
-      <configuration name="ListTests.testIntList" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="ListTests_testIntList - 2020.07.12 at 23h 10m 29s.xml">
-      <configuration name="ListTests.testIntList" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
     <history-entry file="ListTests_testIntList - 2020.07.12 at 23h 11m 51s.xml">
       <configuration name="ListTests.testIntList" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
@@ -446,9 +447,24 @@
     <history-entry file="ListTests_testFloatList - 2020.07.12 at 23h 43m 06s.xml">
       <configuration name="ListTests.testFloatList" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
+    <history-entry file="ListTests_testFloatList - 2020.07.12 at 23h 44m 05s.xml">
+      <configuration name="ListTests.testFloatList" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ListTests_testStringList - 2020.07.12 at 23h 45m 47s.xml">
+      <configuration name="ListTests.testStringList" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ObjectTests_testSingleObject - 2020.07.13 at 09h 04m 57s.xml">
+      <configuration name="ObjectTests.testSingleObject" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ObjectTests_testSingleObject - 2020.07.13 at 09h 05m 54s.xml">
+      <configuration name="ObjectTests.testSingleObject" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="ObjectTests_testSingleObject - 2020.07.13 at 09h 08m 05s.xml">
+      <configuration name="ObjectTests.testSingleObject" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32199000" />
+    <option name="totallyTimeSpent" value="34920000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -460,22 +476,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="108" y="23" width="1334" height="844" extended-state="0" />
-    <editor active="true" />
+    <frame x="106" y="23" width="1334" height="844" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.36679536" visible="true" weight="0.27089784" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.36679536" visible="true" weight="0.27089784" />
       <window_info id="Structure" order="1" sideWeight="0.63320464" side_tool="true" weight="0.27089784" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.4401596" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3643617" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.27659574" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27260637" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3257979" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
       <window_info anchor="bottom" id="Conan" internal_type="SLIDING" order="7" show_stripe_button="false" type="SLIDING" weight="0.32978722" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.24468085" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.4867021" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.46276596" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32978722" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -530,6 +545,26 @@
           <line>160</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/tests/object_tests.hpp</url>
+          <line>103</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/tests/object_tests.hpp</url>
+          <line>131</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/tests/object_tests.hpp</url>
+          <line>114</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/tests/object_tests.hpp</url>
+          <line>142</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -548,14 +583,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ratio">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="281" column="46" selection-start-line="281" selection-start-column="42" selection-end-line="281" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/AlogTime.hpp" />
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ctime">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1063" />
@@ -777,34 +804,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/string_tests.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="37" column="2" lean-forward="true" selection-start-line="10" selection-end-line="37" selection-end-column="2" />
-          <folding>
-            <element signature="e#40#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/proto_models/testModel.pb.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="3769" column="44" lean-forward="true" selection-start-line="3769" selection-start-column="44" selection-end-line="3769" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vcpkg/installed/x64-osx/include/google/protobuf/repeated_field.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-212">
           <caret line="165" column="6" selection-start-line="165" selection-start-column="6" selection-end-line="165" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -839,30 +842,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cpp_models/string_model.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-          <folding>
-            <element signature="e#107#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cpp_models/base_model.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/list_tests.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="212" column="32" selection-start-line="212" selection-start-column="32" selection-end-line="212" selection-end-column="32" />
-          <folding>
-            <element signature="e#40#64#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -880,10 +863,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/list_tests.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1810">
+          <caret line="337" column="23" selection-start-line="337" selection-start-column="23" selection-end-line="337" selection-end-column="23" />
+          <folding>
+            <element signature="e#40#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#40#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/string_tests.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="131" column="1" lean-forward="true" selection-start-line="40" selection-end-line="131" selection-end-column="1" />
+          <folding>
+            <element signature="e#40#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/proto_models/testModel.pb.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="4206" column="54" selection-start-line="4206" selection-start-column="54" selection-end-line="4206" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cpp_models/string_model.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="e#107#130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cpp_models/list_model.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="171" column="54" selection-start-line="171" selection-start-column="54" selection-end-line="171" selection-end-column="54" />
+        <state relative-caret-position="264">
+          <caret line="127" column="28" lean-forward="true" selection-start-line="127" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cpp_models/object_model.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="111" column="47" selection-start-line="111" selection-start-column="47" selection-end-line="111" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/object_tests.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1847">
+          <caret line="139" column="14" selection-start-line="139" selection-start-column="14" selection-end-line="139" selection-end-column="14" />
+          <folding>
+            <element signature="e#107#131#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

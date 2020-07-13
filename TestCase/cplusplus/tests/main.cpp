@@ -8,6 +8,7 @@
 #include "float_tests.hpp"
 #include "string_tests.hpp"
 #include "list_tests.hpp"
+#include "object_tests.hpp"
 
 int main(int argc, char ** argv) {
 

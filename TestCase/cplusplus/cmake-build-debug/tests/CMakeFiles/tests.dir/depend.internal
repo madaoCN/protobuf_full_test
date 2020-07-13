@@ -102,6 +102,7 @@ tests/CMakeFiles/tests.dir/main.cpp.o
  /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/cpp_models/base_model.h
  /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/cpp_models/float_model.h
  /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/cpp_models/list_model.h
+ /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/cpp_models/object_model.h
  /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/cpp_models/string_model.h
  /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/proto_models/testModel.pb.cc
  /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/src/proto_models/testModel.pb.h
@@ -109,5 +110,6 @@ tests/CMakeFiles/tests.dir/main.cpp.o
  /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/integer_tests.hpp
  /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/list_tests.hpp
  /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/main.cpp
+ /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/object_tests.hpp
  /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/string_tests.hpp
  /Users/liangxiansong/git4Madao/protobuf_full_test/TestCase/cplusplus/tests/test_config.h
